@@ -12,7 +12,7 @@ Modifications Implemented:
 The original Transformer and TransformerNetworkTanh architectures were tested, with a detailed analysis of their respective issues and the conditions under which one outperforms the other.
 
 Additionally, I experimented with different datasets beyond COCO, including:
-  - Anime dataset 
+  - [Anime dataset](https://www.kaggle.com/datasets/parnianmalekian/anime-images)
   - Modified Face dataset
   - Landscape 
   - Personal photo
