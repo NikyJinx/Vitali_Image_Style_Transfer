@@ -78,7 +78,7 @@ To initiate the training process, follow these steps:
 3) **Seed Configuration:**
    - Modify or remove the `SEED` variable as needed. Keeping the same seed will result in similar initialization for different training runs, while changing it will introduce variability.
 
-## Perform Style Transfer
+### Perform Style Transfer
 Once you have trained and saved your models, or downloaded a pre-trained Transformer, you can perform style transfer on a single image or all images in a folder. To do this, follow these steps:
 1) **Open the Style Transfer Script:** Execute the script named `Visualizzazione`
 2) **Adjust Configuration:** Make sure to update the following settings as needed:
