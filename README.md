@@ -1,36 +1,47 @@
 # Vitali_Image_Style_Transfer
-This is a Deep Learning progect taht aims to test some architetture for image style transfer and make some change to study the effect and try some improvements. In particular i have use the script made by rrmina https://github.com/rrmina/fast-neural-style-pytorch/tree/master.
+This deep learning project explores various architectures for image style transfer, making adjustments to study their effects and test potential improvements. The script used is based on rrmina's work, which can be found here: rrmina/fast-neural-style-pytorch.
 
-List of modification:
-- Try different dataset other than coco:
+Modifications Implemented:
+- Adjusted the style and content weights used to calculate the weighted loss function.
+- Introduced a linear variation in the weights during training (e.g., starting at 500 and decreasing to 50).
+- Implemented a linear schedule for the learning rate during training.
+- Experimented with different activation functions, such as SELU.
+- Added dropout for regularization.
+- Integrated an attention mechanism.
+
+The original Transformer and TransformerNetworkTanh architectures were tested, with a detailed analysis of their respective issues and the conditions under which one outperforms the other.
+
+Additionally, I experimented with different datasets beyond COCO, including:
   - Anime dataset 
   - Modified Face dataset
-  - Some personal photo
-- Changed the Style and Content Weight used to calculate the weighted Loss
-- Added a linear change of the weights durng the training (e.g. starts at 500 finish at 50)
-- Add a linear change of the learining rate during the training
-- 
+  - Landscape 
+  - Personal photo
 
 ## Requirements: 
 
-Most of the codes required a GPU with CUDAs, i used the 4060ti 16gb. The 16gb are highly suggest to run the scripts, evenmore if you'll use the Transformer with Attention Meccanism.
-
-## Setup steps:
-
-### Necessaries Donloads:
+Most of the code requires a GPU with CUDA support. I used a 4060 Ti with 16GB of VRAM, which is highly recommended, especially when using the Transformer with the attention mechanism.
 
 
-#### VGG16 pre-trained. https://github.com/jcjohnson/pytorch-vgg
+## Setup Instructions
 
-Put this in the content folder, or in the training script change the location of the file to the one you prefer
+### Step 1: Download Necessary Files
 
-#### Pre-train transformers. 
-Some trains have been already done, to use the saved weight donload the folder content at this link: 
+#### VGG16 Pre-trained Model
+Download the pre-trained VGG16 model from this repository:  
+[https://github.com/jcjohnson/pytorch-vgg](https://github.com/jcjohnson/pytorch-vgg)  
+Place the file in the `content` folder, or adjust the file path in the training script to match the location of the downloaded file.
 
-https://drive.google.com/file/d/1KonkFWUoCf-CyGY6HZ9Ea3bq703DHOO4/view?usp=drive_link
+#### Pre-trained Transformers
+Some transformer models have already been trained. To use these pre-trained weights, download the following file:  
+[Pre-trained Transformers (Google Drive)](https://drive.google.com/file/d/1KonkFWUoCf-CyGY6HZ9Ea3bq703DHOO4/view?usp=drive_link)  
+Extract the contents and place them in a folder such as `./content`. If you'd prefer to save the models in a different location, you can modify the file path in the script to match your saved location.
 
-#### Pre-Processed Images.
-Some result have been already processed, to see them download the folder output at this link: 
+#### Pre-Processed Images
+Some results have already been generated. To view these pre-processed images, download the following file:  
+[Pre-Processed Images (Google Drive)](https://drive.google.com/file/d/1kcZeW-pgMJyBanEYk4ghpqE89x6h_ohQ/view?usp=drive_link)  
+Extract the folder `./output`.
 
-https://drive.google.com/file/d/1kcZeW-pgMJyBanEYk4ghpqE89x6h_ohQ/view?usp=drive_link 
+### Step 2: Adjust the Script
 
+Ensure the paths in your training script are updated to point to the downloaded files.  
+Run the project in an environment with CUDA support for optimal performance.
