@@ -17,7 +17,7 @@ Additionally, I experimented with different datasets beyond COCO, including:
   - [Landscape Pictures](https://www.kaggle.com/datasets/arnaud58/landscape-pictures) 
   - Personal photo
 
-## Requirements: 
+## Hardware Requirements: 
 
 Most of the code requires a GPU with CUDA support. I used a 4060 Ti with 16GB of VRAM, which is highly recommended, especially when using the Transformer with the attention mechanism.
 
