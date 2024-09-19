@@ -1,4 +1,15 @@
 # Vitali_Image_Style_Transfer
+This is a Deep Learning progect taht aims to test some architetture for image style transfer and make some change to study the effect and try some improvements. In particular i have use the script made by rrmina https://github.com/rrmina/fast-neural-style-pytorch/tree/master.
+
+List of modification:
+- Try different dataset other than coco:
+  - Anime dataset 
+  - Modified Face dataset
+  - Some personal photo
+- Changed the Style and Content Weight used to calculate the weighted Loss
+- Added a linear change of the weights durng the training (e.g. starts at 500 finish at 50)
+- Add a linear change of the learining rate during the training
+- 
 
 ## Requirements: 
 
