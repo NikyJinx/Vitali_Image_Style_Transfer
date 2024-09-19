@@ -13,7 +13,7 @@ The original Transformer and TransformerNetworkTanh architectures were tested, w
 
 Additionally, I experimented with different datasets beyond COCO, including:
   - [Anime dataset](https://www.kaggle.com/datasets/parnianmalekian/anime-images)
-  - Modified Face dataset
+  - Modified Face dataset made by adding some of [Human face](https://www.kaggle.com/datasets/ashwingupta3012/human-faces) to [Facial Emotion Dataset](https://www.kaggle.com/datasets/himanshuydv11/facial-emotion-dataset/data)
   - Landscape 
   - Personal photo
 
