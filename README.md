@@ -1,5 +1,5 @@
 # Vitali_Image_Style_Transfer
-This deep learning project explores various architectures for image style transfer, making adjustments to study their effects and test potential improvements. The script used is based on rrmina's work, which can be found here: rrmina/fast-neural-style-pytorch.
+This deep learning project explores various architectures for image style transfer, making adjustments to study their effects and test potential improvements. The script used is based on rrmina's work, which can be found here: [rrmina/fast-neural-style-pytorch.](https://github.com/rrmina/fast-neural-style-pytorch/tree/master)
 
 Modifications Implemented:
 - Adjusted the style and content weights used to calculate the weighted loss function.
