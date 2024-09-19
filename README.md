@@ -22,9 +22,9 @@ Additionally, I experimented with different datasets beyond COCO, including:
 Most of the code requires a GPU with CUDA support. I used a 4060 Ti with 16GB of VRAM, which is highly recommended, especially when using the Transformer with the attention mechanism.
 
 
-## Setup Instructions
+# Setup Instructions
 
-### Step 1: Download Necessary Files
+## Step 1: Download Necessary Files
 
 #### VGG16 Pre-trained Model
 Download the pre-trained VGG16 model from this repository:  
@@ -41,12 +41,13 @@ Some results have already been generated. To view these pre-processed images, do
 [Pre-Processed Images (Google Drive)](https://drive.google.com/file/d/1kcZeW-pgMJyBanEYk4ghpqE89x6h_ohQ/view?usp=drive_link)  
 Extract the folder `./output`.
 
-### Step 2: Create the right environment
+## Step 2: Create the right environment
 #### Method 1:  Manual Setup
+
 ##### Create a New Environment: 
 Install Python version 3.12.4 and create a new environment with the following command:
-
 - `conda create -n myenv Python 3.12.4`
+- 
 ##### Activate the Environment:
 - `conda activate myenv`
 
@@ -62,18 +63,22 @@ If you encounter issues or prefer to use a pre-configured environment, you can s
 Make sure to activate the environment after creation:
 - `conda activate myenv`
 
-### Step 3: Run and Adjust the Script
+## Step 3: Run and Adjust the Script
 
 Ensure the paths in your training script are updated to point to the downloaded files.  
 Run the project in an environment with CUDA support for optimal performance.
 
-## Run Training:
+### Run Training:
 To initiate the training process, follow these steps:
 
-1) Run the Training Script: Execute the file named Program.
-2) Configure Global Settings:
+1) **Run the Training Script:** Execute the file named Program.
+2) **Configure Global Settings:**
    - Update the `DATASET_PATH`, `SAVE_PATH`, and `STYLE_IMAGE_PATH` variables with the correct file paths.
    - Adjust the `weight` and `ADAM_LR` variables according to your requirements.
-3) Seed Configuration:
+3) **Seed Configuration:**
    - Modify or remove the `SEED` variable as needed. Keeping the same seed will result in similar initialization for different training runs, while changing it will introduce variability.
 
+## Perform Style Transfer
+Once you have trained and saved your models, or downloaded a pre-trained Transformer, you can perform style transfer on a single image or all images in a folder. To do this, follow these steps:
+1) **Open the Style Transfer Script:** Execute the script named Visualizzazione
+2) **Adjust Configuration:** Make sure to update the following settings as needed
