@@ -80,5 +80,13 @@ To initiate the training process, follow these steps:
 
 ## Perform Style Transfer
 Once you have trained and saved your models, or downloaded a pre-trained Transformer, you can perform style transfer on a single image or all images in a folder. To do this, follow these steps:
-1) **Open the Style Transfer Script:** Execute the script named Visualizzazione
-2) **Adjust Configuration:** Make sure to update the following settings as needed
+1) **Open the Style Transfer Script:** Execute the script named `Visualizzazione`
+2) **Adjust Configuration:** Make sure to update the following settings as needed:
+   - **Model Path:** Update the `STYLE_TRANSFORM_PATH` variable to the path of the model you wish to use.
+   - **Color Preservation:** To retain the original colors of the content image, set `PRESERVE_COLOR=True`. Otherwise, set it to `False` 
+   - **Select the Transformer Network:** Specify the network by setting net to the name of the transformer network you have trained. For example:
+   - `net=transformer_norm.TransformerNetworkTanh`
+   - `net=transformer.TransformerNetworkTanhWithAttention()`
+3) **Input and Output Paths:**
+   - When running the script, enter the path to the images you want to transform. If the          images are in a subfolder relative to where you are running the script, you can specify      the path as `subfolder/subfolder2`.
+   - The script will create a subfolder named output within the specified path and save the transformed images there
