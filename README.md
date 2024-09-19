@@ -47,7 +47,7 @@ Extract the folder `./output`.
 ##### Create a New Environment: 
 Install Python version 3.12.4 and create a new environment with the following command:
 - `conda create -n myenv Python 3.12.4`
-- 
+  
 ##### Activate the Environment:
 - `conda activate myenv`
 
