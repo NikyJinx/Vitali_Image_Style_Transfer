@@ -88,5 +88,5 @@ Once you have trained and saved your models, or downloaded a pre-trained Transfo
    - `net=transformer_norm.TransformerNetworkTanh`
    - `net=transformer.TransformerNetworkTanhWithAttention()`
 3) **Input and Output Paths:**
-   - When running the script, enter the path to the images you want to transform. If the          images are in a subfolder relative to where you are running the script, you can specify      the path as `subfolder/subfolder2`.
-   - The script will create a subfolder named output within the specified path and save the transformed images there
+   - When running the script, enter the path to the images you want to transform. If the images are in a subfolder relative to where you are running the script, you can specify the path as `subfolder/subfolder2`.
+   - The script will create a subfolder named output within the specified path and save the transformed images there.
