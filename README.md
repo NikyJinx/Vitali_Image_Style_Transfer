@@ -41,7 +41,39 @@ Some results have already been generated. To view these pre-processed images, do
 [Pre-Processed Images (Google Drive)](https://drive.google.com/file/d/1kcZeW-pgMJyBanEYk4ghpqE89x6h_ohQ/view?usp=drive_link)  
 Extract the folder `./output`.
 
-### Step 2: Adjust the Script
+### Step 2: Create the right environment
+#### Method 1:  Manual Setup
+##### Create a New Environment: 
+Install Python version 3.12.4 and create a new environment with the following command:
+
+- `conda create -n myenv Python 3.12.4`
+##### Activate the Environment:
+- `conda activate myenv`
+
+#### Install Required Libraries: 
+Install the necessary libraries using `pip`:
+- `pip install torch matplotlib pillow opencv-python numpy`
+
+
+#### Method 2: Using an Existing Environment
+If you encounter issues or prefer to use a pre-configured environment, you can set up the environment specified in the environment.yml file. This environment include additional libraries not required for the current script. To set up the environment, run:
+- `conda env create -f environment.yml`
+  
+Make sure to activate the environment after creation:
+- `conda activate myenv`
+
+### Step 3: Run and Adjust the Script
 
 Ensure the paths in your training script are updated to point to the downloaded files.  
 Run the project in an environment with CUDA support for optimal performance.
+
+## Run Training:
+To initiate the training process, follow these steps:
+
+1) Run the Training Script: Execute the file named Program.
+2) Configure Global Settings:
+   - Update the `DATASET_PATH`, `SAVE_PATH`, and `STYLE_IMAGE_PATH` variables with the correct file paths.
+   - Adjust the `weight` and `ADAM_LR` variables according to your requirements.
+3) Seed Configuration:
+   - Modify or remove the `SEED` variable as needed. Keeping the same seed will result in similar initialization for different training runs, while changing it will introduce variability.
+
